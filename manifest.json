@@ -1,0 +1,31 @@
+{
+
+  "manifest_version": 2,
+  "name": "Stop this",
+  "version": "1.0",
+"applications": {
+  "gecko": {
+    "id": "stop_this@aniketb.me"
+  }
+},
+  "description":"Helps you stop addiction" ,
+  "permissions": [
+  	"storage",
+	"tabs"
+  ],
+  "icons": {
+    "48": "icons/border-48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.quora.com/*"],
+      "js": ["stop_this.js"]
+    }
+  ],
+  "background": {
+    "scripts": ["background.js"]
+    
+  }
+
+}
