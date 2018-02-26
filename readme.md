@@ -6,7 +6,8 @@ Values are currently hard-coded. I will try to implement a way to dynamically se
 Currently works on Quora.
 The time limit of one session is 10 minutes.
 The time interval between two sessions is 1 hour.
-Look at ```
+Look at 
+```
 time_limit_between_two_sessions
 time_limit_for_one_session
 ```
